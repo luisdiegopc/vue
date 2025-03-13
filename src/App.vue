@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1> Meu Teste </h1>
+    <ExBootstrap />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// Importe o componente
+ import ExBootstrap from './components/ExBootstrap.vue';
 export default {
   name: 'App',
+  // Registre o componente
   components: {
-    HelloWorld
-  }
-}
-</script>
+    ExBootstrap,
+  },
+};
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+
+</script>
